@@ -1,0 +1,231 @@
+a,i{
+	text-decoration: none;
+	transition: all 0.3s;
+}
+a:hover{
+	text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+/**
+* CSS Home Index
+*/
+.badge{
+	position:absolute;
+	top: -5px;
+	right: -10px;
+}
+.line{
+	background-color: #f9f9f9;
+	width: 100%;
+	height: 1px;
+	opacity: 60%
+}
+.bg-default{
+	background: linear-gradient(90deg, rgba(255,79,4,0.896796218487395) 0%, rgba(255,79,4,0.6026785714285714) 100%);
+}
+.bg-gradient{
+	background: linear-gradient(125deg, rgba(131,58,180,0.7) 0%, rgba(253,29,29,0.6) 50%, rgba(255,202,8,0.8) 100%);
+}
+.nav-link{
+	font-weight: 500;
+}
+a.profile:hover{
+	background-color: #ff834e !important;
+	color: #fbfbfb !important;
+	border-radius: 4px;
+}
+
+a.nav-link:hover{
+	background-color: #ff834e;
+	border-radius: 4px;
+}
+
+input{
+	outline: none;
+}
+.explore{
+	position: absolute;
+	right: 0;
+	top: 1.1rem;
+	transition: all 0.3s;
+}
+
+.explore:hover>i{
+	transform: translate(5px);
+}
+
+.slide-show{
+	height: 505px;
+	width: 90%;
+	border-radius: 5px;
+}
+
+img.img_show{
+	height: 505px;
+	width: 100%;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+.previous-show{
+	opacity: 0;
+	transform: translate(-15px);
+	transition: all 0.4s;
+}
+
+.previous-show:hover{
+	opacity: 100%;
+	transform: translate(-5px);
+}
+
+.next-show{
+	opacity: 0;
+	transform: translate(15px);
+	transition: all 0.4s;
+}
+
+.next-show:hover{
+	opacity: 100%;
+	transform: translate(5px);
+}
+.add-cart{
+	position: absolute;
+	bottom: 1rem;
+}
+.card-title.text-dark:hover{
+	color: #ff4f04 !important;
+}
+.payment{
+	transition: filter 0.4s ease-in-out;
+	filter: grayscale(90%);
+}
+.payment:hover{
+	filter: none;
+}
+
+.bg-image{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 10px;
+	background-image: url("../image/uudai11.jpg");
+}
+.card{
+	transition: all 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06)
+}
+.shop-now, .dropdown, .dropdown-menu, .dropdown-toggle{
+	transition: all 0.3s;
+}
+
+.shop-now:hover{
+	background-color: #ff834e;
+}
+.btn{
+    color: #fff;
+    background: linear-gradient(135deg, #ff834e, #ff4f04);
+    border: lightblue;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.btn:hover{
+    color: #fff;
+    border: lightblue;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    animation: rotate 0.7s ease-in-out both;
+}
+.btn:before,.btn:after{
+    content: '';
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(100%, -25%) translate3d(0, 0, 0);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.btn:hover:before,
+.btn:hover:after{
+    opacity: 0.15;
+}
+.btn:hover:before{ transform: translate3d(50%, 0, 0) scale(0.9); }
+.btn:hover:after{ transform: translate(50%, 0) scale(1.1); }
+@keyframes rotate{
+    0%{ transform: rotate(0deg); }
+    25%{ transform: rotate(1deg); }
+    50%{ transform: rotate(-1deg); }
+    75%{ transform: rotate(0.5deg); }
+    100%{ transform: rotate(0deg); }
+}
+@media only screen and (max-width: 767px){
+    .btn{ margin-bottom: 20px; }
+}
+.dropdown-menu{
+    transition: all .3s ease 0s;
+    transform-origin: 0 0 0;
+    display: none;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+   transform: scaleY(100%);
+}
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    /*pointer-events: none;*/
+}
+.view-all{
+	font-weight: 500;
+}
+.view-all::after{
+	content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 2rem;
+    height: 2px;
+    background-color: #ff4f04;
+    transition: all 0.3s;
+    margin: 0 auto;
+    border-radius: 1px;
+}
+.view-all:hover::after {
+    width: 7rem;
+}
+#myBut{
+	background: linear-gradient(135deg, #162431, #343a40) !important;
+	position: fixed;
+	z-index: 99;
+	right: 1.5rem;
+	bottom: 1.5rem;
+}
+
+/**
+* CSS Home Refund
+*/
+.guarantee{
+	transition: all 0.3s;
+}
+.guarantee:hover{
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+/**
+* CSS Home portfolio
+*/
+
+.a-portfolio{
+	color: #ff4f04;
+}

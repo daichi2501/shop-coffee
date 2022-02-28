@@ -1,0 +1,24 @@
+
+body{
+	background-position: -41px -778px;
+	background-repeat: no-repeat;
+}
+
+.form_register{
+	height: auto;
+	width: 40rem;
+	background-color: white;
+	opacity: 80%;
+	position: relative;
+	border-radius: 2px;
+}
+
+.logo{
+	height: 8rem;
+	width: 10rem;
+}
+
+.register{
+	border-radius: 19px;
+	width: 100%;
+}

@@ -1,0 +1,28 @@
+body{
+	background-position: -400px -759px;
+	background-repeat: no-repeat;
+}
+
+.form_login{
+	width: 30rem;
+	height: 32rem;
+	background-color: white;
+	opacity: 80%;
+	border-radius: 2px;
+	position: fixed;
+	top: 10%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.logo{
+	height: 12rem;
+	width: 15rem;
+}
+
+.have-position{
+	position: absolute;
+	right: 0.5rem;
+	top: 2.7rem;
+}
